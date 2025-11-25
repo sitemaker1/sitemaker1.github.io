@@ -1,0 +1,109 @@
+.clock1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 12px;
+}
+
+.timmy {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p {
+    margin-top: 1%;
+}
+
+.yeah, .yeah1 {
+    width: 20px;          /* choose a normal visible size */
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.yeah:hover,
+.yeah1:hover {
+    transform: scale(1.2);
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link123 {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link123:visited {
+  color: black;
+}
+
+.link123:hover {
+  color: #555; 
+}
+
+.grow-link {
+  position: relative;
+  display: inline-block;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: black;
+  overflow: hidden; /* ensures animation stays inside */
+}
+
+.grow-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transform: scale(0);       /* starts invisible */
+  transform-origin: center;  /* grows outward evenly */
+  transition: transform 0.3s ease;
+  z-index: -1;               /* Stay behind the text */
+  border-radius: 4px;        /* optional */
+}
+
+.grow-link:hover::before {
+  transform: scale(1);       /* full-size rectangle */
+}
+
+.grow-link:hover {
+  color: white;              /* text stays visible */
+}
+
+.slide-link {
+  position: relative;
+  display: inline-block;
+  padding: 4px 6px;
+  text-decoration: none;
+  color: black;
+}
+
+.slide-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transform: scaleX(0);          /* starts invisible */
+  transform-origin: left;        /* expands LEFT → RIGHT */
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.slide-link:hover::before {
+  transform: scaleX(1);          /* fills rectangle */
+}
+
+.slide-link:hover {
+  color: white;                  /* text becomes readable */
+}
