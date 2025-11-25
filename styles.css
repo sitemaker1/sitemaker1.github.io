@@ -1,7 +1,7 @@
 .clock1 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 1%;
     font-size: 12px;
 }
 
@@ -106,4 +106,18 @@ p {
 
 .slide-link:hover {
   color: white;                  /* text becomes readable */
+}
+
+.center_image {
+  width: 5%;
+  length: 5 %;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+
 }
